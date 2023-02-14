@@ -15,5 +15,5 @@ jobs:
           python-version: "3.x"
 
       - with:
-        run: main.py
+          run: main.py
 
