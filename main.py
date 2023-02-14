@@ -1,1 +1,2 @@
-print("running successfull")
+import datetime
+print(datetime.datetime.now())
