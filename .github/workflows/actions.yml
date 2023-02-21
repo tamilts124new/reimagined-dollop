@@ -17,6 +17,12 @@ jobs:
       - name: "Running Python Script"
         run: python main.py
         
+        
+      - name: "Authentication"
+        run: |
+          git config --global user.email "tamilts124+new@gmail.com"
+          git config --global user.name "Anonymous"
+      
       - name: "Commit Operation"
         run: |
           git add log.txt
