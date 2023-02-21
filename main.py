@@ -1,2 +1,3 @@
-import datetime#hi
-print(datetime.datetime.now())
+import os
+
+print(os.listdir())
