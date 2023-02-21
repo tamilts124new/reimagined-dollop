@@ -24,13 +24,10 @@ jobs:
           git config --global user.name "Anonymous"
           git remote set-url origin https://github.com/tamilts124new/reimagined-dollop.git
       
-      - name: "Commit Operation"
-        run: |
-          git add log.txt
-          git commit -m "Updated log file"
+#       - name: "Commit Operation"
+#         run: |
+#           git add log.txt
+#           git commit -m "Updated log file"
     
       - name: push changes 
-        uses: ad-m/github-push-action@master
-        with:
-          force: true
-          tags: true
+        uses: stefanzweifel/git-auto-commit-action@v4
