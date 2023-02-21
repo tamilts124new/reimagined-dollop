@@ -1,3 +1,10 @@
-import os
+import datetime
 
-print(os.listdir())
+today = datetime.datetime.today()
+
+print(f"-- TODAY: {today} --")
+
+with open("log.txt", "a") as file:
+  file.write(f"{today}/n")
+  
+print("-- LOG UPDATED SUCCESSFULLY --")
