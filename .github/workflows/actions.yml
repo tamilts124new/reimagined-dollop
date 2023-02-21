@@ -22,6 +22,7 @@ jobs:
         run: |
           git config --global user.email "tamilts124+new@gmail.com"
           git config --global user.name "Anonymous"
+          git remote add origin https://github.com/tamilts124new/reimagined-dollop.git
       
       - name: "Commit Operation"
         run: |
