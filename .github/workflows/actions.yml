@@ -16,4 +16,9 @@ jobs:
 
       - name: "Running Python Script"
         run: python main.py
-
+        
+      - name: "Commit Operation"
+        run: |
+          git add log.txt
+          git commit -m "Updated log file"
+          git push -u origin master
