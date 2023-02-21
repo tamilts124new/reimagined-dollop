@@ -30,7 +30,7 @@ jobs:
           git commit -m "Updated log file"
     
       - name: push changes 
-        uses: ad-m/github-push-action@v0.6.0
+        uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.TOKEN }}
-          branch: master
+          force: true
+          tags: true
