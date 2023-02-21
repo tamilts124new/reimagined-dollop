@@ -19,6 +19,7 @@ jobs:
         
         
       - name: "Authentication"
+        uses: ad-m/github-push-action@v0.6.0
         run: |
           git config --global user.email "tamilts124+new@gmail.com"
           git config --global user.name "Anonymous"
