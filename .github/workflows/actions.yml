@@ -20,6 +20,12 @@ jobs:
       - uses: actions/checkout@v2
         with: 
           token: ${{secrets.PAT}}
+          
+      - name: Pull & update submodules recursively
+        run: |
+          git submodule update --init --recursive
+          git submodule update --recursive --remote
+          
       - name: "Commit Changes"
         run: |
           git config --global user.email "tamilts124new@users.noreply.github.com"
