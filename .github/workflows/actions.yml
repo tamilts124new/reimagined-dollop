@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+      - uses: actions/checkout@v2
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
         with:
@@ -20,9 +21,9 @@ jobs:
         
       - name: "committing and pushing"
         run: |
-          git config --global user.email "tamilts124+new@gmail.com"
+          git config --global user.email "tamilts124new@users.noreply.github.com"
           git config --global user.name "tamilts124new"
-          git remote set-url origin https://github.com/tamilts124new/reimagined-dollop.git
+          # git remote set-url origin https://github.com/tamilts124new/reimagined-dollop.git
           git add .
           git commit -m "updated log file"
           git push origin master
